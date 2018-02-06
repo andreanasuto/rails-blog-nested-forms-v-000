@@ -24,7 +24,7 @@
   </div>
 
   <div class="field">
-    <%= f.fields_for do |tag_field| %><br>
+    <%= f.fields_for :tags do |tag_field| %><br>
       <%= tag_field.label :name %>
       <%= tag_field.text_field :name %>
     <% end %>
